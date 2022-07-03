@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "[class='container-fluid cart-info product-list'] [class='table table-striped table-bordered'] tr td:nth-child(2) a"
+}

@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "[class='contentpanel'] p:nth-child(6)"
+}

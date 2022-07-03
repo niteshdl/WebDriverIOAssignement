@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "[class$='cart-info product-list'] [id^='cart_checkout']"
+}

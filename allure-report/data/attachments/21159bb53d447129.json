@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "[class='table confirm_products'] tr td:nth-child(2) a"
+}

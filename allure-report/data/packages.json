@@ -1,0 +1,68 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Purchase an item",
+    "children" : [ {
+      "name" : "User should be able to select product,add to cart, make payment and order should get placed",
+      "uid" : "227f9b106d232d58",
+      "parentUid" : "a2983996bd79ecac2231013f94f72516",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656855998679,
+        "stop" : 1656856023627,
+        "duration" : 24948
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome-103.0.5060.66" ]
+    } ],
+    "uid" : "a2983996bd79ecac2231013f94f72516"
+  }, {
+    "name" : "Login Test",
+    "children" : [ {
+      "name" : "User should able to Login with vaild loginname and password",
+      "uid" : "e2ad204865db9c25",
+      "parentUid" : "ce416f1b6a03b6eed7b72fd8e5dbe526",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656855998710,
+        "stop" : 1656856014173,
+        "duration" : 15463
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "chrome-103.0.5060.66" ]
+    } ],
+    "uid" : "ce416f1b6a03b6eed7b72fd8e5dbe526"
+  }, {
+    "name" : "Register a new User Test",
+    "children" : [ {
+      "name" : "User should able to Register on entering valid details in all the input fields",
+      "uid" : "e4cf8fd12cf1e021",
+      "parentUid" : "74112e68de4bc1a31632337266e19e03",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656855998712,
+        "stop" : 1656856019137,
+        "duration" : 20425
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ "chrome-103.0.5060.66" ]
+    } ],
+    "uid" : "74112e68de4bc1a31632337266e19e03"
+  } ]
+}

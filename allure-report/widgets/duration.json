@@ -1,0 +1,31 @@
+[ {
+  "uid" : "e4cf8fd12cf1e021",
+  "name" : "User should able to Register on entering valid details in all the input fields",
+  "time" : {
+    "start" : 1656855998712,
+    "stop" : 1656856019137,
+    "duration" : 20425
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "227f9b106d232d58",
+  "name" : "User should be able to select product,add to cart, make payment and order should get placed",
+  "time" : {
+    "start" : 1656855998679,
+    "stop" : 1656856023627,
+    "duration" : 24948
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2ad204865db9c25",
+  "name" : "User should able to Login with vaild loginname and password",
+  "time" : {
+    "start" : 1656855998710,
+    "stop" : 1656856014173,
+    "duration" : 15463
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
