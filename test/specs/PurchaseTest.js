@@ -23,15 +23,15 @@ describe('Purchase an item', () => {
         await CategoryMenuPage.clickOnSpecials();
         await CategoryMenuPage.selectProduct('ABSOLUE EYE PRECIOUS CELLS');
         await CategoryMenuPage.clickOnAddToCart();
-        
+        //Verify-product gets added in cart
         await ExpectChai( await ShoppingCartPage.txtgetTitleText()).to.equal("SHOPPING CART");
         await ExpectChai( await ShoppingCartPage.txtgetProductName()).to.equal("Absolue Eye Precious Cells");
         await ShoppingCartPage.clickOnCheckoutButton();
-
+        //Verify-product on checkout page
         await ExpectChai( await CheckoutConfirmationPage.txtgetTitleText()).to.equal("CHECKOUT CONFIRMATION");
         await ExpectChai( await CheckoutConfirmationPage.txtgetProductName()).to.equal("Absolue Eye Precious Cells");
         await CheckoutConfirmationPage.clickOnCheckoutButton();
-       
+        //Verify-Order get placed
         await ExpectChai( await CheckoutConfirmationPage.txtgetConfirmationText()).to.equal("Thank you for shopping with us!");
         await ExpectChai( await CheckoutConfirmationPage.txtgetTitleText()).to.equal("YOUR ORDER HAS BEEN PROCESSED!");
     });
