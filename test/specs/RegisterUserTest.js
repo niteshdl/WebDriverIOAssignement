@@ -2,7 +2,6 @@ const LandingPage = require('../pageobjects/LandingPage');
 const CreateAccountPage = require('../pageobjects/CreateAccountPage');
 const RegisterData = require('../testData/RegisterData');
 const ExpectChai = require('chai').expect
-var randomEmail = require('random-email');
 
 describe('Register a new User Test', () => {
     it('User should able to Register on entering valid details in all the input fields', async () => {
