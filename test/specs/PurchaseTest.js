@@ -4,6 +4,8 @@ const LoginPage = require('../pageobjects/LoginPage');
 const CategoryMenuPage = require('../pageobjects/CategoryMenuPage');
 const ShoppingCartPage = require('../pageobjects/ShoppingCartPage');
 const CheckoutConfirmationPage = require('../pageobjects/CheckoutConfirmationPage');
+const LoginData = require('../testData/LoginData');
+const ProductData = require('../testData/ProductData');
 const ExpectChai = require('chai').expect
 
 describe('Purchase an item', () => {
@@ -14,22 +16,22 @@ describe('Purchase an item', () => {
        
         await ExpectChai( await LoginPage.txtText()).to.equal("RETURNING CUSTOMER");
                 
-        await LoginPage.enterLoginName('AmitJacksonNew12');
-        await LoginPage.enterPassword('Amit@1234');
+        await LoginPage.enterLoginName(LoginData.username)
+        await LoginPage.enterPassword(LoginData.password)
         await LoginPage.clickLoginButton();
                   
         await ExpectChai(await LoginPage.txtMyAccountText()).to.equal("MY ACCOUNT");
         
         await CategoryMenuPage.clickOnSpecials();
-        await CategoryMenuPage.selectProduct('ABSOLUE EYE PRECIOUS CELLS');
+        await CategoryMenuPage.selectProduct(ProductData.productName.toUpperCase());
         await CategoryMenuPage.clickOnAddToCart();
         //Verify-product gets added in cart
         await ExpectChai( await ShoppingCartPage.txtgetTitleText()).to.equal("SHOPPING CART");
-        await ExpectChai( await ShoppingCartPage.txtgetProductName()).to.equal("Absolue Eye Precious Cells");
+        await ExpectChai( await ShoppingCartPage.txtgetProductName()).to.equal(ProductData.productName);
         await ShoppingCartPage.clickOnCheckoutButton();
         //Verify-product on checkout page
         await ExpectChai( await CheckoutConfirmationPage.txtgetTitleText()).to.equal("CHECKOUT CONFIRMATION");
-        await ExpectChai( await CheckoutConfirmationPage.txtgetProductName()).to.equal("Absolue Eye Precious Cells");
+        await ExpectChai( await CheckoutConfirmationPage.txtgetProductName()).to.equal(ProductData.productName);
         await CheckoutConfirmationPage.clickOnCheckoutButton();
         //Verify-Order get placed
         await ExpectChai( await CheckoutConfirmationPage.txtgetConfirmationText()).to.equal("Thank you for shopping with us!");

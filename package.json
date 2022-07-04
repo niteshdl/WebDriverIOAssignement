@@ -15,6 +15,8 @@
         "wdio": "wdio run wdio.conf.js"
     },
     "dependencies": {
-        "chai": "^4.3.6"
+        "chai": "^4.3.6",
+        "random-email": "^1.0.3",
+        "unique-names-generator": "^4.7.1"
     }
 }
